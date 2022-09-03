@@ -2,10 +2,10 @@
 
 Imagine a librarian at example University, and need a tool to record what books are in the library and who borrows them. The app that I created can allow the librarian to:
 
-Add new students or teachers.
-Add new books.
-Save records of who borrowed a given book and when.
-And all of this are built in a beautiful and well-organized way!
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when.
+- And all of this are built in a beautiful and well-organized way!
 
 ## Built With
 
@@ -15,16 +15,16 @@ And all of this are built in a beautiful and well-organized way!
 
 ## Clone this repository
 
-  $ git@github.com:NduatiKagiri/school_library.git
-  $ cd school_library
+    $ git@github.com:NduatiKagiri/school_library.git
+    $ cd school_library
 
 ## Run Project
-  $ Kali Rolling WSL
+    $ Kali Rolling WSL
 
 ### Install
-  $ rbenv install 3.0.1
-  $ rbenv global 3.0.1
-  $ ruby -v
+    $ rbenv install 3.0.1
+    $ rbenv global 3.0.1
+    $ ruby -v
 
 ## Authors
 
