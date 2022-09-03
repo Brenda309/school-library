@@ -1,7 +1,8 @@
 require './person'
 
 class Student < Person
-   attr_reader :classroom
+  attr_reader :classroom
+
   def initialize(classroom)
     super()
     @classroom = classroom
@@ -11,7 +12,7 @@ class Student < Person
     "¯\(ツ)/¯"
   end
 
-    def classroom=(classroom)
+  def classroom=(classroom)
     @classroom = classroom
     classroom.student.push(self) unless classroom.student.include?(self)
   end
