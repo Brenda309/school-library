@@ -1,4 +1,3 @@
-# rubocop:disable
 require_relative './teacher'
 require_relative './book'
 require_relative './stundent'
@@ -15,7 +14,7 @@ class App
   end
 
   def list_books
-    if @books.length > 0
+    if @books.length.positive
       books.each { |book| puts "Title: \"#{book.title}\", Author: #{book.author}" }
     else
       puts 'there is no books entries yet.'
@@ -23,7 +22,7 @@ class App
   end
 
   def list_people
-    if @people.length > 0
+    if @people.length.positive
       people.each do |person|
         puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
