@@ -83,7 +83,7 @@ def create_rental(app)
       person_i = gets.chomp.to_i
       puts ''
 
-on
+    n
       puts 'Date: '
       date = gets.chomp
 
