@@ -1,3 +1,4 @@
+# rubocop:disable all
 require_relative './teacher'
 require_relative './book'
 require_relative './stundent'
@@ -53,7 +54,7 @@ class App
     puts @people[person_index].name
     rental = Rental.new(date, @people[person_index], @books[book_index])
     @rentals.push(rental)
-    puts 'Book Rental was created successfully Enjoy the book'
+    puts 'Book Rental was created successfully Enjoy your reading'
   end
 
   def list_rentals_by_id(person_id)

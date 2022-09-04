@@ -69,35 +69,30 @@ def create_book(app)
   app.create_book(title, author)
 end
 
-
 def create_rental(app)
-  unless app.list_books_with_index.nil?
-    puts 'Please select a book from the list by index number: '
-    book_i = gets.chomp.to_i
-    puts ''
+  return nil unless app.list_books_with_index == true
 
-   
-    unless app.list_people_with_index.nil?
+  puts 'Please select a book from the list by index number: '
+  book_i = gets.chomp.to_i
+  puts ''
 
-      puts 'Please select a person from the list by index number(not id): '
-      person_i = gets.chomp.to_i
-      puts ''
+  return nil unless app.list_people_with_index == true
 
-    n
-      puts 'Date: '
-      date = gets.chomp
+  puts 'Please select a person from the list by index number(not id): '
+  person_i = gets.chomp.to_i
+  puts ''
 
-      app.create_rental(date, person_i, book_i)
-    end
-  end
+  puts 'Date: '
+  date = gets.chomp
+  app.create_rental(date, person_i, book_i)
 end
 
 def list_rentals_by_id(app)
-  unless app.list_people_with_index.nil?
-    puts 'ID of the person'
-    person_id = gets.chomp.to_i
-    app.list_rentals_by_id(person_id)
-  end
+  return nil unless app.list_people_with_index.nil?
+
+  puts 'ID of the person'
+  person_id = gets.chomp.to_i
+  app.list_rentals_by_id(person_id)
 end
 
 def main
