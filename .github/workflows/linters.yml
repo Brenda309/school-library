@@ -3,9 +3,10 @@ name: Linters
 on: pull_request
 
 jobs:
-  rubocop:
+  rubocop: 
     name: Rubocop
     runs-on: ubuntu-22.04
+  
     
     steps:
       - uses: actions/checkout@v2

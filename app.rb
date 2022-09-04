@@ -1,4 +1,4 @@
-# rubocop:disable all
+# rubocop:disable
 require_relative './teacher'
 require_relative './book'
 require_relative './stundent'
