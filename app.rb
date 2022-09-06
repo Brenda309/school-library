@@ -42,7 +42,7 @@ def list_of_people
   end
 
   def create_peaple(name, age, parent_permission: true)
-    person = People.new(name, age, parent_permission: true)
+    person = People.new(name, age, parent_permission :true)
     @peaple.push(person)
   end
 
