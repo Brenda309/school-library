@@ -33,4 +33,35 @@ def list_of_people
       put " Age: #{person.age}"
     end
   end
+
+  #create people
+  def create_student(name, age, parent_permission: true)
+   student = Student.new(name, age. parent_permission: true)
+   @people.push(student)
+   put "student create succefully"
+  end
+
+  def create_peaple(name, age, parent_permission: true)
+    person = People.new(name, age, parent_permission: true)
+    @peaple.push(person)
+  end
+
+  def create_book(title, author)
+    book = Book.new(title,author)
+    @books.push(book)
+  end
+
+  def create_rentals(date, person_id, book_id)
+    rental = Rental.new(date, @people[person_id], @books[book_id])
+    @rentals.push(rental)
+  end
+
+  def list_of_rentals(person_id)
+    if rentals.empty?
+    put "No rentals yet"
+    else 
+    filtered_rentals = @rentals.select { |rental| rental.person.id == person_id }
+    filtered_rentals.each { |rental| puts "Date: #{rental.date} Book: #{rental.book.title} by #{rental.book.author}" }
+  end
+end
 end
